@@ -223,3 +223,4 @@ console.log(numberTimesWithTwo);
 
 //console.log(students45[index][students45]); // nanti dilanjutin
 
+//tambahan dan update ke 2
