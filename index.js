@@ -241,5 +241,3 @@ studentsWithGender.forEach(student => {
 //car.push ["suzuki"]
 //console.log(japanCar, "==>2");
 //console.log(car, "==> nih");
-
-
