@@ -128,20 +128,62 @@ index 1 itu selalu di level 1 startnya
 
 // idealnya
 
-let studentsWithGender = [['hafiz', 'alwy', 'bambang'],['amel','ribka']] // nested array / array of array
-//console.log(studentsWithGender [0] [0] [0]);
+// let studentsWithGender = [['hafiz', 'alwy', 'bambang'],['amel','ribka']] // nested array / array of array
+// console.log(studentsWithGender [0] [1] [3]);
+
+// //case kalo mau narik huruf di belakang di hafidz, alwy, bambang
+// let hafidzStudent = studentsWithGender[0] [0]
+// console.log(hafidzStudent[hafidzStudent.length - 1]);
+// let alwyStudent = studentsWithGender [0] [1]
+// let bambangStudent = studentsWithGender [0] [2] 
+
+// console.log(hafidzStudent, alwyStudent, bambangStudent);
+//index = start dari 0 , length star dari 1
+// semua yg punya index bisa di looping
+
+
+let students45 = ["amel", "bambang", "suryana"] // 3length
+
+//for (let index = 0; index < students45.length; index++) {
+   // const element = array[index];
+//    console.log(students45)
+//    console.log(students45[index])
+//    console.log(students45[index][students45[index].length - 1]);
+//}
+
+//atau
+
+// let nameStudent = students45[index]
+// let lastWordFromStudent = nameStudent[students45[index].length - 1]
+
+// console.log(students45[students45.length - 1]);
+// console.log(lastWordFromStudent);
+
+//iteration & breakdown
+/** 
+ index = 0
+ 0 < 3 ==> true
+    nameStudent = students45[0] // => amel
+    lastWordFromStudent = amel[amel.length - 1] =>
+                        = amel [4 - 1]
+                        = amel [3] ==> l
+    
+*/                          
+
+
+
 
 //JENIS METHODE DI ARRAY (FOR EACH, PUSH, POP, SHIFT)
 
 // for each
 
-//studentsWithGender.forEach(student => {
-//    console.log(student);
+studentsWithGender.forEach(student => {
+    console.log(student);
 
 
-//student.forEach(studentWithoutClass => {
-//    console.log(studentWithoutClass);
-//    })    
+// student.forEach(studentWithoutClass => {
+//     console.log(studentWithoutClass);
+//     })    
 //})
 
 //push => menambahkan value ke array lokasi indexnya terakhir
@@ -150,35 +192,35 @@ let studentsWithGender = [['hafiz', 'alwy', 'bambang'],['amel','ribka']] // nest
 //unshift => nambah item di pertama
 //filter => membuat array baru
 
-let animals = ["cat", 'dog', "bird"]
+// let animals = ["cat", 'dog', "bird"]
 
-console.log(animals, '==>before push');
-animals.push("pig")
-console.log(animals, '==>after push');
-animals.pop()
-console.log(animals, '==> after pop')
-animals.shift()
-console.log(animals, '==>after shift');
-animals.unshift("elephant")
-console.log(animals, 'after unshift');
+// console.log(animals, '==>before push');
+// animals.push("pig")
+// console.log(animals, '==>after push');
+// animals.pop()
+// console.log(animals, '==> after pop')
+// animals.shift()
+// console.log(animals, '==>after shift');
+// animals.unshift("elephant")
+// console.log(animals, 'after unshift');
 
 //filter
-const ages = [18, 23, 60, 48]
+// const ages = [18, 23, 60, 48]
 // lalu buat variabel
-const resultMoreThanFifty = ages.filter(el => {
-    return el >= 50
-})
+// const resultMoreThanFifty = ages.filter(el => {
+//     return el >= 50 
+// })
 
-console.log(resultMoreThanFifty);
+// console.log(resultMoreThanFifty);
 
-//map => membuat array baru untuk function yang dipanggil
+// //map => membuat array baru untuk function yang dipanggil
 
-const number = [2,4,8]
-const numberTimesWithTwo = number.map(el => {
-    return el * 2
-})
+// const number = [2,4,8]
+// const numberTimesWithTwo = number.map(el => {
+//     return el * 2
+// })
 
-console.log(numberTimesWithTwo);
+// console.log(numberTimesWithTwo);
 
 //concat => join 2 lebih array
 
@@ -201,26 +243,3 @@ console.log(numberTimesWithTwo);
 //console.log(car, "==> nih");
 
 
-
-
-//case kalo mau narik huruf di belakang di hafidz, alwy, bambang
-//let hafidzStudent = studentsWithGender[0] [0]
-//console.log(hafidzStudent[hafidzStudent.length - 1]);
-//let alwyStudent = studentsWithGender [0] [1]
-//let bambangStudent = studentsWithGender [0] [2] 
-
-//console.log(hafidzStudent, alwyStudent, bambangStudent);
-//index = start dari 0 , length star dari 1
-// semua yg punya index bisa di looping
-
-
-//let students45 = ["amel", "bambang", "suryana"] // 3length
-
-//for (let index = 0; index < students45.length; index++) {
-//    // const element = array[index];
-//    console.log(students45[index]);
-//}
-
-//console.log(students45[index][students45]); // nanti dilanjutin
-
-//tambahan dan update ke 2
